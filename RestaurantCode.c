@@ -37,11 +37,28 @@ int main()
         mealTotal = mealCost + mealTax + mealTip;
         printf("Tax on the meal is: %f; The Tip on your meal is: %f\n Total Price comes out to: %f", &mealTax, &mealTip, &mealTotal);
     }
-    // else if randomNUm = 2
-        //mealCost = 13.25
-
-    //else if randomNum = 3
-        //mealCost = 13.25
+    
+    else if (randomNum == 2)
+    {
+        mealCost = 13.25;
+        printf("Your pizza cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
+        scanf("%f %f", &tax, &tip);
+        mealTax = mealCost * (tax/100);
+        mealTip = mealCost * (tax/100);
+        mealTotal = mealCost + mealTax + mealTip;
+        printf("Tax on the meal is: %f; The Tip on your meal is: %f\n Total Price comes out to: %f", &mealTax, &mealTip, &mealTotal);
+    }
+    
+    else if (randomNum == 3)
+    {
+        mealCost = 22.35;
+        printf("Your pizza cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
+        scanf("%f %f", &tax, &tip);
+        mealTax = mealCost * (tax/100);
+        mealTip = mealCost * (tax/100);
+        mealTotal = mealCost + mealTax + mealTip;
+        printf("Tax on the meal is: %f; The Tip on your meal is: %f\n Total Price comes out to: %f", &mealTax, &mealTip, &mealTotal);
+    }
     
     return 0;
 }
