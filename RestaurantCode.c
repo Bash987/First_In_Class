@@ -19,7 +19,7 @@ int main()
     if (randomNum == 0)
     {
         mealCost = 9.95;
-        printf("Your pizza cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
+        printf("Your salad cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
         scanf("%f %f", &tax, &tip);
         mealTax = mealCost * (tax/100);
         mealTip = mealCost * (tax/100);
@@ -30,7 +30,7 @@ int main()
     else if (randomNum == 1)
     {
         mealCost = 4.55;
-        printf("Your pizza cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
+        printf("Your soup cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
         scanf("%f %f", &tax, &tip);
         mealTax = mealCost * (tax/100);
         mealTip = mealCost * (tax/100);
@@ -41,7 +41,7 @@ int main()
     else if (randomNum == 2)
     {
         mealCost = 13.25;
-        printf("Your pizza cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
+        printf("Your sandwich cost is $%f, please input tax percentage (first) a space and tip percentage (second value) ", mealCost);
         scanf("%f %f", &tax, &tip);
         mealTax = mealCost * (tax/100);
         mealTip = mealCost * (tax/100);
@@ -59,6 +59,7 @@ int main()
         mealTotal = mealCost + mealTax + mealTip;
         printf("Tax on the meal is: %f; The Tip on your meal is: %f\n Total Price comes out to: %f", &mealTax, &mealTip, &mealTotal);
     }
-    
+
     return 0;
+    
 }
